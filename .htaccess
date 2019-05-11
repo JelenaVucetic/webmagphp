@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteRule ^$ webmagphp.test/ [L]
+  RewriteRule (.*) webmagphp.test/$1 [L]
+</IfModule>
