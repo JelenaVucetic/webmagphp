@@ -39,7 +39,7 @@
 					<div class="container">
 						<!-- logo -->
 						<div class="nav-logo">
-							<a href="<?php echo URLROOT; ?>" class="logo"><img src="/images/logo.png" alt=""></a>
+							<a href="/" class="logo"><img src="/images/logo.png" alt=""></a>
 						</div>
 						<!-- /logo -->
 
@@ -54,8 +54,13 @@
 
 						<!-- search & aside toggle -->
 						<div class="nav-btns">
-							<a id="nav-link-register" href="<?php echo URLROOT;?>/user/register">Register</a>
-							<a id="nav-link-login" href="<?php echo URLROOT;?>/user/login">Login</a>
+							<?php if(isset($_SESSION['user_id'])) : ?>
+							<a id="nav-link-logout" href="<?php echo URLROOT;?>/users/logout">Logout</a>
+							<?php else :?>
+							<a id="nav-link-register" href="<?php echo URLROOT;?>/users/register">Register</a>
+							<a id="nav-link-login" href="<?php echo URLROOT;?>/users/login">Login</a>
+							<?php endif ?>
+
 							<button class="aside-btn"><i class="fa fa-bars"></i></button>
 							<button class="search-btn"><i class="fa fa-search"></i></button>
 							<div class="search-form">

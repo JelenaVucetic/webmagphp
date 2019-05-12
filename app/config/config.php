@@ -9,7 +9,7 @@ define('DB_NAME', 'webmagphp');
 define('APPROOT', dirname(dirname(__FILE__)));
 
 // URL Root
-define('URLROOT', '/home/darko/www/webmagphp');
+define('URLROOT', 'http://webmagphp.test');
 
 // Site Name
 define('SITENAME', 'WEBMAG');

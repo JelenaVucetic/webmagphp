@@ -978,6 +978,6 @@ RESPONSIVE
     }
 }
 
-#nav-link-register , #nav-link-login {
+#nav-link-register , #nav-link-login , #nav-link-logout{
     padding-left:25px !important;
 }

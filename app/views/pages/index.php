@@ -1,9 +1,38 @@
 <?php require APPROOT . '/views/includes/header.php'; ?> 
-<h1><?php echo $data['title']; ?></h1>
-<ul>
-    <?php foreach($data['posts'] as $post) : ?>
 
-    <li><?php echo $post->title;?></li>
-    <?php endforeach; ?>
-</ul>
+
+<div class="section">
+<!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+
+                    <!-- post -->
+                   
+                    <h1><?php echo $data['title']; ?></h1>
+                    
+                    <!-- /post -->
+                </div>
+            </div>
+
+            <div class="col-md-4">
+
+                <!-- catagories -->
+               
+                <!-- /catagories -->
+
+                <!-- tags -->
+                
+                <!-- /tags -->
+            </div>
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>
+<!-- /section -->
+
+
 <?php require APPROOT . '/views/includes/footer.php'; ?> 
