@@ -55,7 +55,16 @@
 						<!-- search & aside toggle -->
 						<div class="nav-btns">
 							<?php if(isset($_SESSION['user_id'])) : ?>
-							<a id="nav-link-logout" href="<?php echo URLROOT;?>/users/logout">Logout</a>
+							<div class="btn-group">
+							<button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								User name
+							</button>
+							<div class="dropdown-menu">
+							<a class="dropdown-item" href="<?php echo URLROOT;?>/users/logout">Logout</a> <br>
+							<a class="dropdown-item" href="<?php echo URLROOT;?>/posts/add">Add post</a>
+							</div>
+						</div>
+							
 							<?php else :?>
 							<a id="nav-link-register" href="<?php echo URLROOT;?>/users/register">Register</a>
 							<a id="nav-link-login" href="<?php echo URLROOT;?>/users/login">Login</a>
