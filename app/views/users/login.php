@@ -7,11 +7,11 @@
         <!-- row -->
         <div class="row">
             <div class="col-md-8">
+            <?php flash('register_succes');?>
                 <div class="row">
 
                 <!-- register form -->
                     <div class="card card-body bg-light mt-5">
-                    <?php flash('register_succes');?>
                     <h2>Login</h2>
                     
                     <p>Please fill your credentails to log in</p>
@@ -46,3 +46,4 @@
 </div>
 <!-- /section -->
 <?php require APPROOT . '/views/includes/footer.php'; ?> 
+

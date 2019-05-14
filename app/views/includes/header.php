@@ -12,6 +12,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet"> 
 
 		<!-- Bootstrap -->
+		
 		<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css"/>
 
 		<!-- Font Awesome Icon -->
@@ -56,8 +57,8 @@
 						<div class="nav-btns">
 							<?php if(isset($_SESSION['user_id'])) : ?>
 							<div class="btn-group">
-							<button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								User name
+							<button id="userbtn" class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<?php echo $_SESSION['user_name']; ?>
 							</button>
 							<div class="dropdown-menu">
 							<a class="dropdown-item" href="<?php echo URLROOT;?>/users/logout">Logout</a> <br>

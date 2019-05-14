@@ -11,8 +11,26 @@
 
                     <!-- post -->
                    
-                    <h1><?php echo $data['title']; ?></h1>
                     
+                    <?php foreach($data['posts'] as $post) : ?>
+    
+    <div class="col-md-6">
+    <h1><?php echo $data['title']; ?></h1>
+        <div class="post post-thumb">
+            <a class="post-img" href="<?php echo URLROOT; ?>/posts/show/<?php echo $post->postId; ?>"><img src="/images/post-1.jpg" alt=""></a>
+            <div class="post-body">
+                <div class="post-meta">
+                    <a class="post-category cat-2" href="category.html">JavaScript</a>
+                    <span class="post-date"><?php echo $post->postCreated;?></span>
+                </div>
+                <h3 class="post-title"><a href="<?php echo URLROOT;?>/posts/show/<?php echo $post->postId; ?>"> <?php echo $post->title; ?></a></h3>
+                <h4 id="post-author">Written by <?php echo $post->name; ?></h4>
+                
+            </div>
+        </div>
+    </div>
+    <?php endforeach?>
+     
                     <!-- /post -->
                 </div>
             </div>
@@ -62,3 +80,4 @@
 
 
 <?php require APPROOT . '/views/includes/footer.php'; ?> 
+

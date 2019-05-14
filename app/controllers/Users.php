@@ -164,7 +164,7 @@
       $_SESSION['user_id'] = $user->id; //user is coming from the model, from login function where we returned row
       $_SESSION['user_email'] = $user->email;
       $_SESSION['user_name'] = $user->name;
-      header("Location: /");
+      header("Location: /posts/index");
     }
 
     public function logout(){
