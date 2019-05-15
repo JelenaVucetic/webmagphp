@@ -8,10 +8,10 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="row">
-                 <!-- post -->              
+                 <!-- post -->           
+                 <h1>Welcome</h1>   
                     <?php foreach($data['posts'] as $post) : ?>
                     <div class="col-md-12">
-                        <h1>Welcome</h1>
                         <div class="post post-row">
                             <a class="post-img" href="<?php echo URLROOT; ?>/posts/show/<?php echo $post->postId; ?>"><img src="/images/post-2.jpg" alt=""></a>
                             <div class="post-body">
